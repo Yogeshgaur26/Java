@@ -1,0 +1,39 @@
+ls                              # List files in the current directory  
+ls -a                           # List all files including hidden ones  
+mkdir <dir>                     # Create a new directory  
+cd <dir>                        # Change directory  
+touch <filename>                # Create a new file  
+vi <filename>                   # Edit or create a file using the vi editor  
+cat <filename>                  # Display contents of a file  
+rm -rf <filename or dir>        # Forcefully remove a file or directory  
+
+git init                        # Initialize a new Git repository  
+git status                      # Show the working tree status  
+git add .                       # Stage all files for commit  
+git add <filename>              # Stage specific file for commit  
+git commit -m "message"         # Commit staged changes with a message  
+git log                         # View commit history  
+git reset <commit-id>           # Reset repository to a specific commit  
+git restore --staged <file>     # Unstage a file from staging area  
+
+git stash                       # Save uncommitted changes temporarily  
+git stash pop                   # Reapply stashed changes and remove them from stash  
+git stash clear                 # Delete all stashed changes  
+
+git remote add origin <url>     # Link local repo to remote GitHub repo  
+git remote -v                   # View remote URLs  
+git push origin master          # Push changes to remote `master` branch  
+git push origin <branch> -f     # Force push to remote branch (use with caution)  
+git pull origin <branch>        # Pull latest changes from remote branch  
+
+git branch <name>               # Create a new branch  
+git checkout <name>             # Switch to the given branch  
+git merge <name>                # Merge the specified branch into current branch  
+
+git clone <url>                 # Clone a remote repository to your local machine  
+git remote add upstream <url>   # Add an upstream repository (used with forks)  
+
+# Concepts
+forking                         # Creating your own copy of someone else's GitHub repo  
+branching                       # Creating isolated versions of your project for new features or fixes  
+pull request                    # Request to merge your changes (usually from a branch/fork) into the main repo  
